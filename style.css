@@ -1,0 +1,84 @@
+body {
+    background: rgb(231,202,215);
+    background: radial-gradient(circle, rgba(231,202,215,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background-color: rgba(148,187,233,0.4);
+    box-shadow: 0 0 10px 0 rgba(72, 92, 116, 0.6);
+    width: clamp(280px, 50vw, 800px);
+    height: min-content;
+    padding: 1rem;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-size:15px;
+    height: 30px;
+    border-width:1px;
+    padding: 0 0.8rem;
+    color:#fff;
+    border-color:#1f2f47;
+    border-top-left-radius:17px;
+    border-top-right-radius:17px;
+    border-bottom-left-radius:17px;
+    border-bottom-right-radius:17px;
+    box-shadow:inset 0px 0px 15px 3px #23395e;
+    background:linear-gradient(#2e466e, #415989);
+}
+
+#add-btn {
+    border-radius: 0 10px 10px 0;
+}
+
+button:hover {
+  background: linear-gradient(#415989, #2e466e);
+}
+
+input {
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    padding: 0 2px;
+    height: 30px;
+    min-width: 250px;
+}
+
+li {
+    list-style: url('arrow-right-solid.svg');
+    position: relative;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    
+}
+
+li:hover {
+    background-color: rgba(230, 2, 104, 0.08);
+}
+
+.close-btn {
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: background-color 0.5s;
+}
+
+.close-btn:hover {
+    color: rgb(230, 2, 104);
+    background-color: rgba(230, 2, 104, 0.2);
+    border-radius: 10px;
+}
+
+.list {
+    min-height: 100px;
+}
